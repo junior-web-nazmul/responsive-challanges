@@ -55,6 +55,12 @@ nav{
     padding: 20px;
 }
 
+/*  web development  */
+
+.web-container-box{
+    display: flex;
+    
+}
 
 
 /* start media quary........................................ */
