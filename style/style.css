@@ -56,12 +56,42 @@ nav{
 }
 
 /*  web development  */
-
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .web-container-box{
     display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
     
 }
+.web-contant{
+    text-align: center;
+    /* gap: 50px; */
+}
 
+.web-contant h1{
+    font-size: 32px;
+    font-weight: 800;
+}
+.web-contant p, .web-container-box p{
+    font-size: 16px;
+    color: #626467;
+}
+.web-container-box h4{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.web-container-box >div{
+    width: 477px;
+}
+
+#box-2{
+    flex-direction: row-reverse;
+}
 
 /* start media quary........................................ */
 
