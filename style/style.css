@@ -16,6 +16,11 @@
 
 }
 
+
+.text-primary{
+font-size: 16px;
+    color: #626467;
+}
 /* nav style */
 
 nav{
@@ -76,10 +81,7 @@ main{
     font-size: 32px;
     font-weight: 800;
 }
-.web-contant p, .web-container-box p,.inspiration-description{
-    font-size: 16px;
-    color: #626467;
-}
+
 .web-container-box h4{
     font-size: 24px;
     font-weight: 700;
@@ -114,6 +116,105 @@ main{
     
 }
 
+/* target section */
+.current-target-contant, .next-target-contant{
+    text-align: center;
+}
+.current-target-title{
+    font-size: 32px;
+    font-weight: 800;
+}
+.current-target-card{
+    display: flex;
+    gap: 24px;
+}
+.card{
+    padding: 40px;
+    border-radius: 8px;
+}
+#card-1{
+    background-color: #fff6f4;
+}
+#card-2{
+    background-color: #f2f6fe;
+}
+#card-3{
+    background-color: #fffdf2;
+}
+.card-title, .next-target-card h4{
+    font-size: 24px;
+    font-weight: 800;
+}
+.card-btn{
+    font-weight: bold;
+    border: none;
+    background:none ;
+    text-decoration: underline;
+}
+
+/* next target  */
+.next-target>div{
+    margin-bottom: 24px;
+}
+.next-target-card{
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    border: 1px solid  #dbdcde;
+    border-radius: 10px;
+}
+
+/* support section */
+
+.support-contant{
+    background-image: url(../assets/handshake.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+.support-contant{
+    text-align: center;
+    align-items: center;
+    padding: 48px 64px;
+}
+.support-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+.support-description{
+    color: #fff;
+}
+.support-contant input{
+    width: 550px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+.support-contant button{
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 180px;
+}
+.footer-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+ .footer-link a{
+        margin-left: 24px;
+    }
+
 /* start media quary........................................ */
 
 @media screen and (max-width:576px){
@@ -126,6 +227,7 @@ main{
     .banner-title{
         font-size: 30px;
     }
+   
 /*  web section */
 .web-container-box{
     flex-direction: column-reverse;
@@ -140,14 +242,60 @@ main{
 }
 
 /* inspiration section */
+.inspiration-container{
+    padding: 0;
+}
 .inspiration-contant-ifram iframe{
     width: fit-content;
     height: fit-content;
 }
 
+/* target section */
+.current-target-card{
+    flex-direction: column;
 
+}
 
+/* next target */
+.next-target-card{
+    flex-direction: column;
+}
+.next-target-card img{
+    width: 50%;
 
+}
+/* support */
+.support-contant{
+    padding: 0;
+    height: 200px;
+}
+.support-contant input{
+    width: fit-content;
+}
+/* footer */
+footer{
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+}
+
+}
+
+/* meduim divice */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+   /* suooprt */
+    .support-contant{
+        padding: 0;
+        height: 200px;
+    }
+    .support-contant input {
+        width: 50%;
+    }
+    /* footer */
+    footer{
+        padding: 0;
+    }
 }
 
 
